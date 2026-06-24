@@ -64,7 +64,7 @@ function HeaderSection() {
         ">
         <h1 className='text-md 
          poppins-extralight md:text-lg'>Najmat Alarab</h1>
-        <p className="text-xs ">Documents Clearing</p>
+        <h2 className="text-xs ">Documents Clearing</h2>
         </span>
         </div>
          
