@@ -79,17 +79,19 @@ function ServiceSection(){
     ]
   }
 ];
+
     return(
-        <section id="Service" className="h-[90vh] bg-white ">
+        <section id="Service"
+         className=" bg-white ">
         <div data-aos="fade-down" className='flex flex-col justify-center mt-3'>
         <span className="text-center">
             <p className="text-blue-500 poppins-extralight text-md">Our service</p>
             <h1 className="text-xl poppins-extralight2 md:text-2xl">Our Best Service</h1>
-        </span>
+        </span><br/>
         <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
         {
   servicesData.map((section, index) => (
-    <div className="bg-slate-100 shadow rounded-sm m-4" key={index}>
+    <div className="bg-slate-100 shadow p-2 rounded-sm m-4" key={index}>
       <h2 className="text-2xl m-2 poppins-extralight">{section.title} :</h2>
 
       {section.services.map((service, i) => (

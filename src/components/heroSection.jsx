@@ -16,11 +16,13 @@ function HeroSection(){
     
     <div className="absolute inset-0 bg-[url('/bg.png')] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-linear-to-r from-black/80 to-black/50"></div>
-    <div  data-aos="zoom-in" className="relative z-10 ">
-    <span className="text-white  text-center flex-col flex ">
+    <div   data-aos="fade-down"
+     data-aos-easing="linear"
+     data-aos-duration="800"className="relative z-10 ">
+    <span className="text-white   text-center flex-col flex ">
     <p className="text-xl">Welcome to</p>
-    <h1 className="text-3xl mt-2 poppins-extralight2 md:text-5xl">Najmat Alarab Documents Clearing</h1>
-    <p className="text-sm md:text-md italic text-wrap  mx-auto  max-w-xl">Providing professional visa, immigration, and document clearing services with  accuracy, transparency, and dedicated customer support.</p>
+    <h1 className="text-3xl mt-2  poppins-extralight2 md:text-5xl">Najmat Alarab Documents Clearing</h1>
+    <p className="text-sm  md:text-md italic text-wrap  mx-auto  max-w-xl">Providing professional visa, immigration, and document clearing services with  accuracy, transparency, and dedicated customer support.</p>
     </span>
     <span className="flex gap-4 flex-wrap justify-center mt-6">
       <a

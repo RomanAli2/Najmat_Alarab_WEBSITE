@@ -167,7 +167,7 @@ function HeaderSection() {
        <input
         id="number"
         type="number"
-        placeholder="Enter Number"
+        placeholder="Your Number"
         name="Number"
         className="px-4 border rounded-sm py-1.5"
         required
@@ -176,7 +176,7 @@ function HeaderSection() {
       <input
         id="email"
         type="email"
-        placeholder="Enter Email"
+        placeholder="Your Email"
         name="email"
         className="px-4 border rounded-sm py-1.5"
         required
