@@ -12,7 +12,7 @@ function ContactSection() {
           <div className="flex items-center gap-2">
             <i className="fa-brands fa-whatsapp text-green-500"></i>
             <span>
-              <strong>Phone:</strong> +971 545059455
+              <strong>Phone:</strong> +971 545049455
             </span>
           </div>
 

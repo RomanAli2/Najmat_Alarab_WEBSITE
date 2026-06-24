@@ -7,6 +7,7 @@ import HeaderSection from './components/headerSection'
 import HeroSection from './components/heroSection'
 import ScrollToTop from './components/ScrollToTop'
 import ServiceSection from './components/serviceSection'
+import WhatsappBtn from './components/whatsappBtn'
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
     <ServiceSection/>
     <AboutSection/>
     <ScrollToTop/>
+    <WhatsappBtn/>
     <BlogSection/>
       <ContctSection/>
       <FooterSection/>

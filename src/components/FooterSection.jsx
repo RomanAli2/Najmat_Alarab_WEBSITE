@@ -26,7 +26,7 @@ function FooterSection() {
         <div>
           <h2 className="text-lg font-semibold mb-3">Contact</h2>
           <ul className="space-y-2 text-gray-300">
-            <li className="hover:text-white transition">📞 +971 545059455</li>
+            <li className="hover:text-white transition">📞 +971 545049455</li>
             <li className="hover:text-white transition">📧 sajidhussain4741@gmail.com</li>
             <li className="hover:text-white transition">
               📍 United Arab Emirates, Deira Dubai Al Baraha
@@ -36,11 +36,20 @@ function FooterSection() {
 
         {/* Services */}
         <div>
-          <h2 className="text-lg font-semibold mb-3">Services</h2>
+          <h2 className="text-lg font-semibold mb-3">New Business Setup</h2>
           <ul className="space-y-2 text-gray-300">
             <li>✔ New Business Setup</li>
             <li>✔ 2 Years Freelance Visa</li>
             <li>✔ Same & Change Location Payment Voucher Available</li>
+          </ul>
+        </div>
+        {/* why choose us */}
+        <div>
+          <h2 className="text-lg font-semibold mb-3">Why Choose Us</h2>
+          <ul className="space-y-2 text-gray-300">
+            <li>✔ Experienced and Professional Team</li>
+            <li>✔ Fast and Efficient Service</li>
+            <li>✔ Competitive Pricing</li>
           </ul>
         </div>
 

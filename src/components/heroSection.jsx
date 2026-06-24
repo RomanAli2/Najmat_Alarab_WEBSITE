@@ -26,7 +26,7 @@ function HeroSection(){
     </span>
     <span className="flex gap-4 flex-wrap justify-center mt-6">
       <a
-          href="https://wa.me/971545059455"
+         href="https://wa.me/971545049455"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 text-center"

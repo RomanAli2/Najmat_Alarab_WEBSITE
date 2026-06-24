@@ -85,7 +85,7 @@ function ServiceSection(){
          className=" bg-white ">
         <div data-aos="fade-down" className='flex flex-col justify-center mt-3'>
         <span className="text-center">
-            <p className="text-blue-500 poppins-extralight text-md">Our service</p>
+           
             <h1 className="text-xl poppins-extralight2 md:text-2xl">Our Best Service</h1>
         </span><br/>
         <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">

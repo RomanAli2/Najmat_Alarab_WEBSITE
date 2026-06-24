@@ -27,8 +27,8 @@ function ScrollToTop() {
   return (
     <button
       onClick={goTop}
-      className="fixed bottom-6 
-      right-6 bg-blue-500 text-white px-3 py-2 rounded-full shadow-lg 
+      className="fixed bottom-8
+      left-6 bg-blue-500 text-white px-3 py-2 rounded-full shadow-lg 
       hover:bg-blue-600 transition-all cursor-pointer"
     >
       ↑ Top
