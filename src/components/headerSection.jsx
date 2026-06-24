@@ -38,8 +38,21 @@ function HeaderSection() {
     }, []);
     
     return(
+      
         <header>
-       <div className=" fixed w-full z-50  bg-slate-100/90 shadow ">
+       <div className=" gap-5  top-0 fixed z-50 w-full bg-slate-100 justify-center flex text-md
+         md:text-lg   ">
+        <span className="text-lg md:text-xl">📞 +971 545049455</span>
+        <span className="flex gap-2 text-lg md:text-xl">  
+        <a href="https://www.instagram.com/muhmmadsajid57?igsh=bDl3MzVkZWN2YzEy&utm_source=qr" target="_blank">
+    <i className="fa-brands fa-instagram  text-white rounded-sm bg-linear-to-r from-pink-400 to-red-400"></i> 
+  </a>
+
+  <a href="https://www.facebook.com/share/17pachg9mb/?mibextid=wwXIfr" target="_blank">
+     <i className="fa-brands fa-facebook text-blue-500"></i> 
+  </a></span>
+        </div>
+       <div className=" fixed w-full z-50 top-7  bg-slate-100/90 shadow ">
         <nav className="flex items-center m-2 justify-between">
         <div className="logo flex gap-1 items-center ">
         {/* Logo */}
@@ -54,6 +67,7 @@ function HeaderSection() {
         <p className="text-xs ">Documents Clearing</p>
         </span>
         </div>
+         
 {isDesktop?        <div className="flex items-center gap-2 md:gap-4">
         <span className="nav-links flex gap-2 md:gap-4 items-center">
             <a  href="#Home" className=" text-sm  md:text-lg
@@ -80,7 +94,7 @@ function HeaderSection() {
        </div>
 {toggleHeader &&(
    <div className="flex flex-col text-center fixed w-full
-    bg-white p-2 z-40 top-13 items-center gap-2 md:gap-4">
+    bg-white p-2 z-40 top-19 items-center gap-2 md:gap-4">
         <span className="nav-links w-full flex gap-2 flex-col md:gap-4 items-center">
             <a onClick={()=>setToggleHeader(false)} href="#Home" className=" text- cursor-pointer w-full p-1 hover:bg-gray-200  md:text-lg
         font-serif">Home</a>

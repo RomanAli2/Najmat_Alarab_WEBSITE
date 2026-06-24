@@ -1,10 +1,12 @@
 import React from "react";
 function ServiceSection(){
+const [serviceLength, setServiceLength] = React.useState(5);
  const servicesData = [
   {
-    title: "Services",
+    title:  "New Business Set Up",
+    icon:"fa-solid fa-building",
     services: [
-      "New Business Set Up",
+     
       "New & Renewal Trade License",
       "Online EJARI (Commercial & Residential)",
       "Voucher Discount",
@@ -18,6 +20,7 @@ function ServiceSection(){
   },
   {
     title: "Dubai 2 Year Freelance Visa",
+    icon:"fa-solid fa-address-card",
     services: [
       "Offer Letter (MOL)",
       "Labour Approval",
@@ -34,6 +37,8 @@ function ServiceSection(){
   },
   {
     title: "Dubai 2 Year Freelance Visa 10 Days Processing Only",
+    icon:"fa-solid fa-stopwatch",
+    
     services: [
       "New Business Set Up",
       "New & Renewal Trade License",
@@ -48,6 +53,8 @@ function ServiceSection(){
   },
   {
     title: "EJARI Services",
+    icon:"fa-solid fa-file-lines",
+
     services: [
       "Separate Office EJARI",
       "Business Center EJARI",
@@ -62,6 +69,8 @@ function ServiceSection(){
   },
   {
     title: "Work Visa / Employment Visa",
+    icon:"fa-solid fa-users",
+
     services: [
       "Professionals Working In UAE",
       "All Documentation Will Be Provided",
@@ -72,6 +81,8 @@ function ServiceSection(){
   },
   {
     title: "Business Setup In Dubai",
+    icon:"fa-solid fa-briefcase",
+
     services: [
       "Freezone, Mainland & Offshore",
       "Trade License And PRO Services",
@@ -79,6 +90,7 @@ function ServiceSection(){
     ]
   }
 ];
+const [expandedCard, setExpandedCard] = React.useState(null);
 
     return(
         <section id="Service"
@@ -91,12 +103,31 @@ function ServiceSection(){
         <div className=" grid grid-cols-1 md:grid-cols-3 gap-4">
         {
   servicesData.map((section, index) => (
-    <div className="bg-slate-100 shadow p-2 rounded-sm m-4" key={index}>
+    <div className="bg-slate-100 shadow p-2  rounded-sm m-4" key={index}>
+<span className="flex gap-2 ">
+  <h2 className="bg-white p-4 w-15 mt-1 h-15 text-center rounded-full text-blue-500">
+  <i className={`text-lg ${section.icon}`}></i></h2>
       <h2 className="text-2xl m-2 poppins-extralight">{section.title} :</h2>
 
-      {section.services.map((service, i) => (
-        <p className="m-2 " key={i}>{service}</p>
-      ))}
+</span>
+{section.services
+  .slice(0, expandedCard === index ? section.services.length : 5)
+  .map((service, i) => (
+    <p className="m-2" key={i}>
+      {service}
+    </p>
+))}
+{section.services.length > 5 && (
+  <p
+    onClick={() => {
+      setExpandedCard(expandedCard === index ? null : index);
+    }}
+    className="text-blue-500 p-3 cursor-pointer"
+  >
+    {expandedCard === index ? "See Less..." : "See More..."}
+  </p>
+)}
+     
     </div>
   ))
 }
