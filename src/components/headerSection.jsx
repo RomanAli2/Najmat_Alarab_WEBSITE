@@ -6,7 +6,7 @@ function HeaderSection() {
     const [toggleHeader, setToggleHeader] = useState(false);
     const [contactBtn ,setContactBtn] = useState(false);
     const [emailForm,setEmailForm] = useState(false)
-    const [state, handleSubmit] = useForm("mpqgwdvq");
+    const [state, handleSubmit] = useForm("mojodbgq");
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
  useEffect(() => {
   if (state.succeeded) {
@@ -44,12 +44,12 @@ function HeaderSection() {
          md:text-lg   ">
         <span  className="text-lg md:text-xl m-2">📞 +971 545049455</span>
         <span className="flex gap-2 text-lg m-2 md:text-xl">  
-        <a href="https://www.instagram.com/muhmmadsajid57?igsh=bDl3MzVkZWN2YzEy&utm_source=qr" target="_blank">
+        <a href="https://www.instagram.com/najmatalarab1/" target="_blank">
     <i className="fa-brands fa-instagram  text-white 
     p-0.5 rounded-md bg-linear-to-r from-pink-400 to-red-400"></i> 
   </a>
 
-  <a href="https://www.facebook.com/share/17pachg9mb/?mibextid=wwXIfr" target="_blank">
+  <a href="https://web.facebook.com/profile.php?id=61591483978152" target="_blank">
      <i className="fa-brands fa-facebook text-blue-500 text-center  "></i> 
   </a></span>
         </div>

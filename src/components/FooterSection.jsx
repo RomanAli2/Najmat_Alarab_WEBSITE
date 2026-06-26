@@ -27,17 +27,17 @@ function FooterSection() {
           <h2 className="text-lg font-semibold mb-3">Contact</h2>
           <ul className="space-y-2 text-gray-300">
             <li className="hover:text-white transition">📞 +971 545049455</li>
-            <li className="hover:text-white transition">📧 sajidhussain4741@gmail.com</li>
+            <li className="hover:text-white transition">📧 najmatalarab1@gmail.com</li>
             <li className="hover:text-white transition">
               📍 United Arab Emirates, Deira Dubai Al Baraha
             </li>
             <li>
-               <a href="https://www.instagram.com/muhmmadsajid57?igsh=bDl3MzVkZWN2YzEy&utm_source=qr" target="_blank">
+               <a href="https://www.instagram.com/najmatalarab1/" target="_blank">
     <i className="fa-brands fa-instagram rounded-sm bg-linear-to-r from-pink-400 to-red-400"></i> Instagram
   </a>
             </li>
             <li className="">
-               <a href="https://www.facebook.com/share/17pachg9mb/?mibextid=wwXIfr" target="_blank">
+               <a href="https://web.facebook.com/profile.php?id=61591483978152" target="_blank">
     <i className="fa-brands fa-facebook text-blue-500"></i> Facebook
   </a>
             </li>

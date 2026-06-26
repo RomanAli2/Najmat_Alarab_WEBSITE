@@ -19,7 +19,7 @@ function ContactSection() {
           <div className="flex items-center gap-2">
             <i className="fa-regular fa-envelope"></i>
             <span>
-              <strong>Email:</strong> sajidhussain4741@gmail.com
+              <strong>Email:</strong> najmatalarab1@gmail.com
             </span>
           </div>
 
