@@ -14,7 +14,7 @@ function HeroSection(){
         <>
      <section id="Home" className="relative flex items-center justify-center pt-15 h-[95vh] w-full">
     
-    <div className="absolute inset-0 bg-[url('/bg.png')] bg-cover bg-center"></div>
+    <div  alt="Dubai Visa Services" className="absolute inset-0 bg-[url('/bg.png')] bg-cover bg-center"></div>
     <div className="absolute inset-0 bg-linear-to-r from-black/80 to-black/50"></div>
     <div   data-aos="fade-down"
      data-aos-easing="linear"

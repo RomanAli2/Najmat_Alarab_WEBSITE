@@ -14,20 +14,20 @@ function AboutSection() {
     <div className="flex-1 flex justify-center">
       <img
         src="/about.png"
-        alt="About"
+        alt="Professional Document Clearing Services in Dubai"
         className="rounded-lg w-full max-w-md"
       />
     </div>
 
     {/* Content */}
     <div className="flex-1 max-w-2xl text-left">
-      <p className="mb-5 leading-6 text-gray-700">
+      <h4 className="mb-5 leading-6 text-gray-700">
         Najmat Alarab Documents Clearing is a trusted consultancy dedicated
         to providing reliable visa, immigration, and document clearing
         services across the UAE. We simplify complex government procedures
         and paperwork, helping individuals, families, and businesses
         complete their documentation efficiently and without hassle.
-      </p>
+      </h4>
 
       <p className="mb-5 leading-6 text-gray-700">
         Our experienced team is committed to delivering accurate guidance,

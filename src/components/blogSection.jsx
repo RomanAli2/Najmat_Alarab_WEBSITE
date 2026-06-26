@@ -16,7 +16,7 @@ function BlogSection(){
 </div>
 <div className="">
 
-    <img className="" src='/blog.png' alt="Blog Image"/>
+    <img className="" src='/blog.png' alt="Business Setup Services in Dubai"/>
 
 </div>
 
