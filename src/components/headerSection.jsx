@@ -80,7 +80,7 @@ function HeaderSection() {
         </span>
         <span>
         <button onClick={()=>setContactBtn(true)} className="bg-blue-500 text-white px-3
-         py-1 rounded-md text-sm md:text-lg poppins-light">Contact</button>
+         py-1 rounded-md text-sm md:text-lg cursor-pointer poppins-light">Contact</button>
         </span>
         </div>:
         <div>
@@ -145,7 +145,7 @@ function HeaderSection() {
         setContactBtn(false)
        }
         }
-          className="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 text-center"
+          className="bg-blue-500 cursor-pointer text-white px-3 py-2 rounded-md hover:bg-blue-600 text-center"
         >
           <i className="fa-regular fa-envelope"></i> Email
         </a>
@@ -176,7 +176,7 @@ function HeaderSection() {
         placeholder="Enter Full Name"
         name="Name"
         required
-        className="px-4 border rounded-sm py-1.5"
+        className="px-4.5 border border-slate-500 rounded-sm py-2"
       />
 
        <input
@@ -184,7 +184,7 @@ function HeaderSection() {
         type="number"
         placeholder="Your Number"
         name="Number"
-        className="px-4 border rounded-sm py-1.5"
+        className="px-4.5 border border-slate-500 rounded-sm py-2"
         required
       />
      
@@ -193,7 +193,7 @@ function HeaderSection() {
         type="email"
         placeholder="Your Email"
         name="email"
-        className="px-4 border rounded-sm py-1.5"
+        className="px-4.5 border border-slate-500 rounded-sm py-2"
         required
       />
       <ValidationError 
@@ -203,7 +203,7 @@ function HeaderSection() {
       />
       <textarea
         id="message"
-        className="px-4 py-1.5 border rounded-sm"
+        className="px-4.5 border border-slate-500 rounded-sm py-2"
         name="message"
         placeholder="Message"
       />
