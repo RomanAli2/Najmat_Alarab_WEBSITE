@@ -12,11 +12,68 @@
 
 .poppins-extralight {
   font-family: "Poppins", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   font-style: semi-bold;
 }
 .poppins-extralight2 {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-style: semi-bold;
+}
+.myElement {
+  display: block;
+}
+
+
+@media (max-width: 331px) {
+  .myElement {
+    display: none;
+  }
+}
+@media (max-width: 330px) {
+  #Home {
+    height: auto;
+    min-height: 100vh;
+    
+    padding-top: 120px;
+  }
+
+  #Home .relative.z-10 {
+    width: 100%;
+  }
+
+  #Home span:first-child {
+    margin-left: 12px;
+    margin-right: 12px;
+    padding-top: 0;
+  }
+
+  #Home h1 {
+    font-size: 1.7rem;
+    line-height: 1.2;
+  }
+
+  #Home p:first-child {
+    font-size: 0.8rem;
+  }
+
+  #Home p:last-child {
+    font-size: 0.7rem;
+    margin-left: 0;
+    max-width: 100%;
+  }
+
+  #Home span:last-child {
+    margin-left: 12px;
+    margin-right: 12px;
+    gap: 10px;
+
+  }
+
+  #Home span:last-child a {
+ 
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 10px;
+  }
 }

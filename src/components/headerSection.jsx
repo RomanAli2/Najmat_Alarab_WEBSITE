@@ -7,6 +7,7 @@ function HeaderSection() {
     const [contactBtn ,setContactBtn] = useState(false);
     const [emailForm,setEmailForm] = useState(false)
     const [state, handleSubmit] = useForm("mojodbgq");
+    const [navBarLinkColor,setNavBarLinkColor]=useState('Home')
     const [showSuccessMessage, setShowSuccessMessage] = useState(false);
  useEffect(() => {
   if (state.succeeded) {
@@ -40,20 +41,25 @@ function HeaderSection() {
     return(
       
         <header>
-       <div className=" gap-5 border-b  top-0 fixed z-50 w-full  bg-slate-100 md:justify-start justify-center flex text-md
-         md:text-lg   ">
-        <span  className="text-lg md:text-xl m-2">📞 +971 545049455</span>
-        <span className="flex gap-2 text-lg m-2 md:text-xl">  
+       <div className=" gap-5 border-b shadow border-black top-0 p-2 fixed z-50 w-full text-white  bg-blue-900 
+            ">
+       <div className="flex justify-around text-xs sm:text-sm md:text-md lg:text-lg ">
+          <span className="hidden md:block">📍United Arab Emirates, Deira Dubai Al Baraha</span>
+        <span  className="myElement">📧najmatalarab1@gmail.com</span>
+        <span  className="">📞+971 545049455</span>
+
+        <span className="flex gap-1">  
         <a href="https://www.instagram.com/najmatalarab1/" target="_blank">
     <i className="fa-brands fa-instagram  text-white 
     p-0.5 rounded-md bg-linear-to-r from-pink-400 to-red-400"></i> 
   </a>
 
   <a href="https://web.facebook.com/profile.php?id=61591483978152" target="_blank">
-     <i className="fa-brands fa-facebook text-blue-500 text-center  "></i> 
+     <i className="fa-brands fa-facebook text-white text-center  "></i> 
   </a></span>
+       </div>
         </div>
-       <div className=" fixed w-full z-50 top-9 bg-slate-100/90 shadow ">
+       <div className=" fixed w-full z-50 top-8 lg:top-10 p-2 bg-white shadow ">
         <nav className="flex items-center m-2 justify-between">
         <div className="logo flex gap-1 items-center ">
         {/* Logo */}
@@ -64,22 +70,33 @@ function HeaderSection() {
         <span className="  
         ">
         <h1 className='text-md 
-         poppins-extralight md:text-lg'>Najmat Alarab</h1>
-        <h2 className="text-xs ">Documents Clearing</h2>
+         poppins-extralight text-blue-900 md:text-lg lg:text-xl'>Najmat Alarab</h1>
+        <h2 className="text-xs lg:text-md text-yellow-700 ">Documents Clearing</h2>
         </span>
         </div>
          
 {isDesktop?        <div className="flex items-center gap-2 md:gap-4">
-        <span className="nav-links flex gap-2 md:gap-4 items-center">
-            <a  href="#Home" className=" text-sm  md:text-lg
-        font-serif">Home</a>
-         <a  href="#About" className=" text-sm  md:text-lg
-        font-serif">About</a>
-         <a  href="#Service" className=" text-sm md:text-lg
-        font-serif">Service</a>
+        <span className="nav-links flex gap-2 lg:text-xl md:gap-4 items-center">
+            <a onClick={()=>{
+              setNavBarLinkColor('Home')
+            }}  href="#Home" className={`text-sm md:text-lg
+        font-serif ${navBarLinkColor==='Home'?'text-blue-700 border-b border-blue-700':'text-black'}`}>Home</a>
+         <a  onClick={()=>{
+              setNavBarLinkColor('About')
+            }}  href="#About" className={`text-sm md:text-lg
+        font-serif ${navBarLinkColor==='About'?'text-blue-700 border-b border-blue-700':'text-black'}`}>About</a>
+         <a onClick={()=>{
+              setNavBarLinkColor('Service')
+            }}  href="#Service" className={` text-sm md:text-lg
+        font-serif ${navBarLinkColor==='Service'?'text-blue-700 border-b border-blue-700':'text-black'}`}>Service</a>
+         <a onClick={()=>{
+              setNavBarLinkColor('Blog')
+            }}  href="#Blog" className={` text-sm md:text-lg
+        font-serif ${navBarLinkColor==='Blog'?'text-blue-700 border-b border-blue-700':'text-black'}`}>Blog</a>
+        
         </span>
         <span>
-        <button onClick={()=>setContactBtn(true)} className="bg-blue-500 text-white px-3
+        <button onClick={()=>setContactBtn(true)} className="bg-blue-800 text-white px-3
          py-1 rounded-md text-sm md:text-lg cursor-pointer poppins-light">Contact</button>
         </span>
         </div>:
@@ -95,20 +112,29 @@ function HeaderSection() {
        </div>
 {toggleHeader &&(
    <div className="flex flex-col text-center fixed w-full
-    bg-white p-2 z-40 top-21 items-center gap-2 md:gap-4">
+    bg-white p-2 z-40 top-26 items-center gap-2 md:gap-4">
         <span className="nav-links w-full flex gap-2 flex-col md:gap-4 items-center">
-            <a onClick={()=>setToggleHeader(false)} href="#Home" className=" text- cursor-pointer w-full p-1 hover:bg-gray-200  md:text-lg
-        font-serif">Home</a>
-         <a onClick={()=>setToggleHeader(false)} href="#About" className=" text-sm cursor-pointer w-full p-1 hover:bg-gray-200  md:text-lg
-        font-serif">About</a>
-         <a onClick={()=>setToggleHeader(false)} href="#Service" className=" text-sm cursor-pointer w-full p-1 hover:bg-gray-200  md:text-lg
-        font-serif">Service</a>
+            <a onClick={()=>{
+              setNavBarLinkColor('Home')
+              setToggleHeader(false)
+            }}  href="#Home" className={`text-sm  md:text-lg
+        font-serif ${navBarLinkColor==='Home'?'text-blue-700 border-b border-blue-700':'text-black'}`}>Home</a>
+         <a  onClick={()=>{
+              setNavBarLinkColor('About')
+              setToggleHeader(false)
+            }}  href="#About" className={`text-sm md:text-lg
+        font-serif ${navBarLinkColor==='About'?'text-blue-700 border-b border-blue-700':'text-black'}`}>About</a>
+         <a onClick={()=>{
+              setNavBarLinkColor('Service')
+              setToggleHeader(false)
+            }}  href="#Service" className={` text-sm md:text-lg
+        font-serif ${navBarLinkColor==='Service'?'text-blue-700 border-b border-blue-700':'text-black'}`}>Service</a>
         </span>
         <span className="w-full ">
         <button onClick={()=>{
             setContactBtn(true)
             setToggleHeader(false)
-        }}  className={`bg-blue-500 cursor-pointer w-full hover:bg-blue-600 text-white px-3
+        }}  className={`bg-blue-800 cursor-pointer w-full hover:bg-blue-900 text-white px-3
          py-1 rounded-sm md:rounded-md text-sm md:text-lg poppins-
           ${toggleHeader ?"w-full":""}`}>Contact</button>
         </span>
@@ -134,7 +160,7 @@ function HeaderSection() {
          href="https://wa.me/971545049455"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 text-center"
+          className="bg-blue-800 text-white px-3 py-2 rounded-md hover:bg-blue-900 text-center"
         >
           <i className="fa-brands fa-whatsapp"></i> Whatsapp
         </a>
@@ -145,7 +171,7 @@ function HeaderSection() {
         setContactBtn(false)
        }
         }
-          className="bg-blue-500 cursor-pointer text-white px-3 py-2 rounded-md hover:bg-blue-600 text-center"
+          className="bg-blue-800 cursor-pointer text-white px-3 py-2 rounded-md hover:bg-blue-900 text-center"
         >
           <i className="fa-regular fa-envelope"></i> Email
         </a>
@@ -212,7 +238,7 @@ function HeaderSection() {
         field="message"
         errors={state.errors}
       />
-      <button  className="bg-blue-500 text-white px-3 py-1.5 rounded-md" type="submit" disabled={state.submitting}>
+      <button  className="bg-blue-800 cursor-pointer  text-white px-3 py-1.5 rounded-md" type="submit" disabled={state.submitting}>
         Submit
       </button>
     </form>

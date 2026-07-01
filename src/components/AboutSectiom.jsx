@@ -3,8 +3,8 @@ import React from "react"
 import '../App.css'
 function AboutSection() {
     return(
-<section id="About" className="min-h-[80vh] py-10">
-  <h2 className="text-3xl font-semibold text-center mb-10"><br/>
+<section id="About" className="min-h-[70vh] py-10">
+  <h2 className="text-3xl poppins-extralight text-blue-800 text-center mb-10"><br/>
     About Us
   </h2>
 
@@ -15,7 +15,7 @@ function AboutSection() {
       <img
         src="/about.png"
         alt="Professional Document Clearing Services in Dubai"
-        className="rounded-lg w-full max-w-md"
+        className="rounded-sm w-full max-w-md"
       />
     </div>
 
@@ -38,13 +38,13 @@ function AboutSection() {
       </p>
 
       <p className="mb-4">
-        <strong>Our Mission:</strong> To provide fast, reliable, and
+        <strong className="text-yellow-600">Our Mission:</strong> To provide fast, reliable, and
         customer-focused document clearing solutions while maintaining the
         highest standards of professionalism and integrity.
       </p>
 
       <p>
-        <strong>Our Vision:</strong> To become one of the most trusted
+        <strong className="text-yellow-600">Our Vision:</strong> To become one of the most trusted
         document clearing and visa service providers in the UAE by
         delivering exceptional customer service and efficient solutions.
       </p>

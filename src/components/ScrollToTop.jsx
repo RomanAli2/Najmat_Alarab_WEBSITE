@@ -28,8 +28,8 @@ function ScrollToTop() {
     <button
       onClick={goTop}
       className="fixed bottom-8
-      left-6 bg-blue-500 text-white px-3 py-2 rounded-full shadow-lg 
-      hover:bg-blue-600 transition-all cursor-pointer"
+      left-6 bg-blue-800 text-white px-3 py-2 rounded-full shadow-lg 
+      hover:bg-blue-900 transition-all cursor-pointer"
     >
       ↑ Top
     </button>
