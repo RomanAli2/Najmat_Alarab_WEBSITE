@@ -50,6 +50,7 @@ function BlogSection(){
       <img
         key={index}
         src={poster}
+        onClick={() => window.open(poster, "_blank")}
         alt={`Poster ${index + 1}`}
         className="w-64 h-auto rounded-sm shadow-lg"
       />
