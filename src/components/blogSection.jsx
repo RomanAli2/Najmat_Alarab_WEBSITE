@@ -52,7 +52,7 @@ function BlogSection(){
         src={poster}
         onClick={() => window.open(poster, "_blank")}
         alt={`Poster ${index + 1}`}
-        className="w-64 h-auto rounded-sm shadow-lg"
+        className="w-64 h-auto cursor-pointer rounded-sm shadow-lg"
       />
     ))}
   </div>
