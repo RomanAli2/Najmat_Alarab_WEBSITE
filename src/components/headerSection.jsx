@@ -129,6 +129,11 @@ function HeaderSection() {
               setToggleHeader(false)
             }}  href="#Service" className={` text-sm md:text-lg
         font-serif ${navBarLinkColor==='Service'?'text-blue-700 border-b border-blue-700':'text-black'}`}>Service</a>
+       <a onClick={()=>{
+              setNavBarLinkColor('Blog')
+            }}  href="#Blog" className={` text-sm md:text-lg
+        font-serif ${navBarLinkColor==='Blog'?'text-blue-700 border-b border-blue-700':'text-black'}`}>Blog</a>
+        
         </span>
         <span className="w-full ">
         <button onClick={()=>{
