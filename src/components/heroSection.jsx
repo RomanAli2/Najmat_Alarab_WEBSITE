@@ -10,11 +10,21 @@ const ArrayForCards = [
     para: "Tourist, business, and family visit visas for all major countries."
   },
   {
+    icon: "fa-solid fa-briefcase",
+    heading: "New Business Set Up",
+    para: "Assistance with setting up new businesses in the UAE."
+  },
+   {
     icon: "fa-solid fa-stamp",
     heading: "Visa Stamping",
-    para: "Assistance with visa stamping, renewals, and document processing."
+    para: "Emirates ID typing , Assistance with visa stamping, renewals, and document processing."
   },
   {
+    icon: "fa-solid fa-id-card",
+    heading: "New & Renewal Trade License",
+    para: "Support for obtaining and renewing trade licenses in Dubai."
+  },
+   {
     icon: "fa-solid fa-graduation-cap",
     heading: "Freelance Visa",
     para: "Freelance work visa assistance for international professionals."
