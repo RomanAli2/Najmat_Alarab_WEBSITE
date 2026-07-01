@@ -10,14 +10,14 @@ const ArrayForCards = [
     para: "Tourist, business, and family visit visas for all major countries."
   },
   {
-    icon: "fa-solid fa-briefcase",
-    heading: "Study Visa",
-    para: "Student visa guidance for top universities worldwide."
+    icon: "fa-solid fa-stamp",
+    heading: "Visa Stamping",
+    para: "Assistance with visa stamping, renewals, and document processing."
   },
   {
     icon: "fa-solid fa-graduation-cap",
-    heading: "Work Visa",
-    para: "Employment, job seeker, and work permit visa assistance."
+    heading: "Freelance Visa",
+    para: "Freelance work visa assistance for international professionals."
   },
   {
     icon: "fa-solid fa-users",
